@@ -33,3 +33,7 @@ test('multiply 2468 * 78 to equal 192504', () => {
 test('multiply 12 * 12 to equal 144', () => {
   expect(calculator.multiply(12, 12)).toBe(144);
 });
+
+
+
+
