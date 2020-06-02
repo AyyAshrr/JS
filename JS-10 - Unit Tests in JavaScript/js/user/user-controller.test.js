@@ -24,4 +24,14 @@ test('add user to userController', () => {
   expect(userController.getUsers()).toContain(user);
 });
 
+//Implement 1 test for the *remove* function that verifies a user that is not in the users' list.
+
+test('remove user to userController', () => {    
+  let user = new User(1235,"ashman", "ashrr@AshCodedIt.com");
+  userController.add(user);    
+  userController.remove(user);
+  expect(userController.users).not.toContain(user);
+});
+
+
 
